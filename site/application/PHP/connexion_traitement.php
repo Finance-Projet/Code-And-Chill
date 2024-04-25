@@ -1,4 +1,5 @@
 <?php
+session_start();
 $mysqli = new mysqli("localhost", "root", "soso_kaliso_2009", "cashtrack");
 
 if ($mysqli->connect_error) {
@@ -19,8 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Vérification du mot de passe hashé
         if (password_verify($mot_de_passe, $utilisateur['mot_de_passe'])) {
             // Mot de passe correct, authentification réussie
+            // L'utilisateur est authentifié avec succès, créer une session et rediriger vers la page d'accueil
+ 
+            // Enregistrer le nom d'utilisateur dans la session
+            $_SESSION['nom_utilisateur'] = $utilisateur['nom'];
             // Vous pouvez rediriger vers une page d'accueil par exemple
-            header("Location: ./../accueil.html");
+            header("Location: ./../accueil.php");
             exit();
         } else {
             // Mot de passe incorrect
