@@ -1,13 +1,52 @@
+<!--                                         -->
+<!-- A creation by N💖TIAKO                  -->
+<!-- Codepen link: https://codepen.io/NTIAKO -->
+<!-- GitHub link: https://github.com/ntiako1 -->
+<!--                                         -->
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="website icon" type="png" href="">
-    <title>FineAns</title>
+    <link rel="stylesheet" href="./CSS/calcul.css">
+    <title>Savings Percentage by N💖TIAKO</title>
 </head>
 <body>
-  
+    <h1 class="FineAns">FineAns</h1>
+    <div class="container parent_container savings_percentage">
+        <div class="container1">
+            <!-- Input for amount -->
+            <div class="child_container amount_container">
+                <label for="amount">Amount:</label>
+                <input type="number" name="amount" id="amount" value="">
+            </div>
+
+            <!-- Input for percentage -->
+            <div class="child_container percentage_container">
+                <label for="percentage">Percentage:</label>
+                <input type="number" name="percentage" id="percentage" value="">
+            </div>
+        </div>
+
+        <!-- Button and result display -->
+        <div class="container2">
+            <button onclick="calculate()">Calculate</button>
+            <p>You can set aside: <span id="result">...</span>€</p>
+
+            <!-- Error message display -->
+            <span id="error"></span>
+        </div>
+    </div>
+
+    <script src="./JS/calcul.js"></script>
 </body>
 </html>
+
+
+<!--                                         -->
+<!-- A creation by N💖TIAKO                  -->
+<!-- Codepen link: https://codepen.io/NTIAKO -->
+<!-- GitHub link: https://github.com/ntiako1 -->
+<!--                                         -->
