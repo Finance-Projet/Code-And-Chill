@@ -1,0 +1,22 @@
+@font-face {
+    font-family: police;
+    src: url(./font.ttf);
+}
+
+body {
+    font-family: police;
+    margin: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: police;
+    
+}

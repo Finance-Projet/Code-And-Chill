@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/calcul.css">
+    <title>CashTrack - Calcul</title>
+</head>
+<body>
+    <div class="calculator">
+        <label for="money">Montant :</label>
+        <input type="number" name="money" id="money">
+
+        <label for="pourcentage">Pourcentage :</label>
+        <input type="number" name="pourcentage" id="pourcentage">
+        <button onclick="calcul()">Calculer</button>
+        <p>Vous pouvez mettre de côté : <span id="resultat">...</span>€</p>
+    </div>
+
+    <script src="JS/calcul.js"></script>
+</body>
+</html>
