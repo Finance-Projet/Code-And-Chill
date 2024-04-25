@@ -32,6 +32,15 @@ a {
 
 .logo {
     margin: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 15px;
 }
 
 .container {
