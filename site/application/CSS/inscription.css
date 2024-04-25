@@ -50,6 +50,14 @@ input {
     width: 300px;
     border-radius: 15px;
     background-color: #4877ef;
+    font-size: 20px;
+}
+
+.button:hover {
+    color: #4877ef;
+    background-color: whitesmoke;
+    border: solid 1px #4877ef;
+    transition: 0.65s;
 }
 
 input::placeholder {
