@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./inter-font/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inder";
+    src: url("./inder-font/Inder-Regular.ttf");
+}
+
+:root{
+    --padding-carte: 10px;
+    --margin: 5px;
+
+    --proportions-colones: 65% 35%;
+
+    --gris-carte: #EBE2E2;
+    --gris-barre: #928E8E;
+    --vert-montant: #037427;
+    --rouge-montant: #BB0B0B;
+    --noir-texte: #212121;
+    
+    --taille-texte: 20px;
+    --taille-date: 15px;
+
+    --font-texte: 'Inter';
+    --font-montant: 'Inder';
+}
+
+.card {
+    background-color: var(--gris-carte);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: var(--proportions-colones);
+    box-sizing: border-box;
+    padding: var(--padding-carte);
+}
+
+.infos * {
+    font-family: var(--font-texte);
+    text-align: left;
+    margin: var(--margin);
+    color: var(--noir-texte);
+}
+
+.intitule {
+    font-size: var(--taille-texte);
+}
+
+hr {
+    border-color: var(--gris-barre);
+}
+
+.date {
+    font-size: var(--taille-date);
+}
+
+.montant {
+    font-family: var(--font-montant);
+    text-align: right;
+    margin-right: var(--margin);
+    font-size: var(--taille-texte);
+    color: var(--vert-montant);
+}
