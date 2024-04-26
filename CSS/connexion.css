@@ -1,69 +1,108 @@
 @font-face {
-    font-family: police;
-    src: url(./../../font.ttf);
+    font-family: 'Jura';
+    src: url("../Fonts/Jura/Jura-VariableFont_wght.ttf");
+}
+
+:root {
+    --background-color: #3D91F4;
+    --box-color: #D9D9D9;
+    --login-color: #000000;
+    --input-color: #c6bdbd;
+    --input-text-default-color: #aba9a9;
+    --input-text-color: #000000;
+    --passwAcc-color: #9d9c9c;
+    
+    --font: 'Jura';
+
+    --input-text-round: 10px;
+    --input-button-round: 100px;
+
+    --box-padding: 30px;
+    --passwAcc-margin: 5px;
+    --input-top-bot-padding: 10px;
+    --horizontal-bar-bot-margin: 20px;
+
+    --login-title-size: 45px;
+    --login--btn-text-size: 35px;
+    --input-text-size: 20px;
+
+    --box-width: 25%;
+    --input-text-width: 100%;
+    --login-btn-width: 70%;
 }
 
 body {
-    font-family: police;
-    background-color: #4877ef;
-    overflow: hidden;
-}
-
-.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--background-color);
+    font-family: var(--font);
+    text-align: center;
 }
 
 .box {
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    flex-direction: column;
-    background-color: whitesmoke;
-    box-shadow: black;
-    padding: 115px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Ombre noire */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    background-color: var(--box-color);
+    padding: var(--box-padding);
+    width: var(--box-width);
 }
 
-h2 {
-    font-size: 40px;
-    margin-bottom: 75px;
+.box h2{
+    font-size: var(--login-title-size);
+    margin: 0px;
+}
 
+.box hr {
+    margin-bottom: var(--horizontal-bar-bot-margin);
 }
 
 input {
-    height: 40px;
-    width: 250px;
-    border-radius: 15px;
-    border: solid 1px gray;
-    padding: 5px;
+    font-family: var(--font);
+    font-size: var(--input-text-size);
+    background-color: var(--input-color);
+    padding-top: var(--input-top-bot-padding);
+    padding-bottom: var(--input-top-bot-padding);
+    width: var(--input-text-width);
+    border-radius: var(--input-text-round);
+    color: var(--input-text-default-color);
+    text-align: center;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+input, textarea{
+    color: var(--input-text-color);
+}
+
+#passwAcc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#passwAcc a {
+    margin: var(--passwAcc-margin);
+    color: var(--passwAcc-color);
+}
+
+p {
+    margin-top: 0px;
+}
+
+#pswl {
+    text-align: left;
+}
+
+#noacc {
+    text-align: right;
 }
 
 .button {
-    height: 49px;
-    width: 300px;
-    border-radius: 15px;
-    background-color: #4877ef;
-    font-size: 20px;
-}
-
-.button:hover {
-    color: #4877ef;
-    background-color: whitesmoke;
-    border: solid 1px #4877ef;
-    transition: 0.65s;
-}
-
-input::placeholder {
-    margin-left: 50px;
-}
-
-#mot_de_passe {
-    margin-bottom: 20px;
+    color: var(--login-color);
+    border-radius: var(--input-button-round);
+    font-size: var(--login--btn-text-size);
+    width: var(--login-btn-width);
 }
