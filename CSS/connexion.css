@@ -23,7 +23,7 @@
     --horizontal-bar-bot-margin: 20px;
 
     --login-title-size: 45px;
-    --login--btn-text-size: 35px;
+    --login-btn-text-size: 35px;
     --input-text-size: 20px;
 
     --box-width: 25%;
@@ -103,6 +103,6 @@ p {
 .button {
     color: var(--login-color);
     border-radius: var(--input-button-round);
-    font-size: var(--login--btn-text-size);
+    font-size: var(--login-btn-text-size);
     width: var(--login-btn-width);
 }
