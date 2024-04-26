@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Enregistrer le nom d'utilisateur dans la session
             $_SESSION['nom_utilisateur'] = $utilisateur['nom'];
             // Vous pouvez rediriger vers une page d'accueil par exemple
-            header("Location: ../../../index.php");
+            header("Location: ../index.php");
             exit();
         } else {
             // Mot de passe incorrect

@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($mysqli->query($query) === TRUE) {
         // Rediriger l'utilisateur vers la page de connexion
-        header("Location: ./connexion_traitement.php");
+        header("Location: ../HTML/connexion.html");
         exit(); // Assure que le script se termine après la redirection
     } else {
         echo "Erreur lors de l'inscription : " . $mysqli->error;
